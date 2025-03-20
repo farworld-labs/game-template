@@ -123,7 +123,9 @@
         <p style="font-size: 12px; color: #888">Mini App</p>
       </div>
       <div class="game-container">
-        <div id="ui">Score: <span id="score">0</span></div>
+        <div id="ui">
+          Score: <span id="score">0</span>
+        </div>
         <canvas id="gameCanvas"></canvas>
         <div id="startScreen" class="screen">
           <h1>NEON RUNNER</h1>
@@ -250,14 +252,8 @@
 
       touchLeft.addEventListener('touchstart', () => (keys['ArrowLeft'] = true))
       touchLeft.addEventListener('touchend', () => (keys['ArrowLeft'] = false))
-      touchRight.addEventListener(
-        'touchstart',
-        () => (keys['ArrowRight'] = true)
-      )
-      touchRight.addEventListener(
-        'touchend',
-        () => (keys['ArrowRight'] = false)
-      )
+      touchRight.addEventListener('touchstart', () => (keys['ArrowRight'] = true))
+      touchRight.addEventListener('touchend', () => (keys['ArrowRight'] = false))
 
       function startGame() {
         gameState = 'playing'
