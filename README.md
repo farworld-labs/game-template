@@ -4,7 +4,7 @@ A simple template for creating HTML5 games that can be played on Farcade. This t
 
 ## Features
 
-- 🎮 Pre-configured game container (800x600)
+- 🎮 Pre-configured game container (max-width 400px; canvas ratio 500x800px)
 - 🔍 Debug mode (toggle with Alt+D)
 - 📦 Common game libraries included:
   - Phaser.js for 2D games
@@ -20,7 +20,7 @@ A simple template for creating HTML5 games that can be played on Farcade. This t
 
 ## Development
 
-- The game container is 800x600 pixels by default
+- The game container has a max-width of 400px by default, with a canvas size ratio of 500x800px.
 - Use Alt+D to toggle debug mode
 - All code goes in the single HTML file
 - Libraries are loaded from CDN for simplicity
@@ -29,7 +29,7 @@ A simple template for creating HTML5 games that can be played on Farcade. This t
 
 Your game should:
 
-- Fit within the 800x600 container
+- Fit within the 500x800 canvas ratio
 - Handle window resizing gracefully
 - Work without requiring external resources
 - Be playable with keyboard/mouse controls
